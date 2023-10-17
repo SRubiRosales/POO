@@ -16,5 +16,7 @@ public class EjemploAutomovil {
         System.out.println(tsuru.acelerar(3000));
         System.out.println(mazda.frenar());
         System.out.println(mazda.acelerarFrenar(4000));
+        System.out.println("Km por litro " + tsuru.calcularConsumo(300, 0.76f));
+        System.out.println("Km por litro " + tsuru.calcularConsumo(300, 75));
     }
 }
