@@ -8,11 +8,23 @@ public class Automovil {
     public Automovil() {
     }
 
-    public Automovil(String fabricante, String modelo, String color, double cinlindrada, int capacidadTanque) {
+    public Automovil(String fabricante, String modelo) {
         this.fabricante = fabricante;
         this.modelo = modelo;
+    }
+
+    public Automovil(String fabricante, String modelo, String color) {
+        this(fabricante, modelo);
         this.color = color;
+    }
+
+    public Automovil(String fabricante, String modelo, String color, double cinlindrada) {
+        this(fabricante, modelo, color);
         this.cinlindrada = cinlindrada;
+    }
+
+    public Automovil(String fabricante, String modelo, String color, double cinlindrada, int capacidadTanque) {
+        this(fabricante, modelo, color, cinlindrada);
         this.capacidadTanque = capacidadTanque;
     }
 
