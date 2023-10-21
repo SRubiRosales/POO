@@ -93,4 +93,11 @@ public class Automovil {
     public float calcularConsumo(int km, int porcentajeGasolina) {
         return km/(capacidadTanque * (porcentajeGasolina/100f));
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        Automovil o = (Automovil) obj;
+        return (this.fabricante.equals(o.getFabricante()) &&
+                this.modelo.equals(o.getModelo()));
+    }
 }
