@@ -15,6 +15,7 @@ public class EjemploAutomovil {
         System.out.println("Son iguales ford y ford " + (ford.equals(ford2)));
         System.out.println("Son iguales auto y ford " + (ford.equals(auto)));
         System.out.println("Son iguales date y auto " + (ford.equals(auto)));
+        System.out.println(tsuru.toString());
 
         System.out.println(tsuru.verDetalle());
         System.out.println(mazda.verDetalle());
